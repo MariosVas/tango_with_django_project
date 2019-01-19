@@ -11,3 +11,8 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
     return render(request, 'rango/index.html', context=context_dict)
     # return HttpResponse("Rango says hey there partner!")
+
+def about(request):
+    context_dict = {'author': "Marios Vasileiou", 'MEDIA_URL':'/media/'}
+
+    return render(request, 'rango/about.html', context= context_dict)
