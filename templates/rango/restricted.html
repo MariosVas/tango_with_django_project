@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "rango/base.html" %}
+{% block title_block %}
+{% endblock %}
+
+{% block body_block %}
+    Page restricted to non users. Please <a href="{% url 'login' %}">Sign In</a>
+{% endblock %}
