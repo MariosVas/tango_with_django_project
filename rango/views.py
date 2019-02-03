@@ -22,6 +22,7 @@ def about(request):
 
     return render(request, 'rango/about.html', context=context_dict)
 
+
 def show_category(request, category_name_slug):
     #Create a context dictionary which we can pass
     # to the template rendering engine.
